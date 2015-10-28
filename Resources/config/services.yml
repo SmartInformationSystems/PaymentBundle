@@ -1,0 +1,13 @@
+parameters:
+    # params
+
+services:
+    smart_information_systems_payment.gateway.configuration_container:
+        class: SmartInformationSystems\PaymentBundle\Gateway\ConfigurationContainer
+
+    sis_payment:
+        class: SmartInformationSystems\PaymentBundle\Service\Payment
+        arguments:
+            configuration: "@smart_information_systems_payment.gateway.configuration_container"
+            session: "@session"
+            em: "@doctrine.orm.entity_manager"

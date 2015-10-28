@@ -1,0 +1,17 @@
+<html>
+<body>
+    <p>Сейчас вы будете перенаправлены на страницу оплаты.</p>
+    <form action="{{ form.getUrl }}" method="{{ form.getMethod }}">
+        {% for field in form.getHiddenFields %}
+            <input name="{{ field.name }}" value="{{ field.value }}" type="hidden"/>
+        {% endfor %}
+        <input type="submit" value="Оплатить"/>
+    </form>
+    <script type="text/javascript">
+        var form = document.getElementsByTagName("form");
+        if (form.length != 0) {
+            form[0].submit();
+        }
+    </script>
+</body>
+</html>

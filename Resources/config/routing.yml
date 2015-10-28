@@ -1,0 +1,29 @@
+sis_payment_frontend_payment_form:
+    path:     /form
+    defaults: { _controller: SmartInformationSystemsPaymentBundle:Frontend:paymentForm }
+
+sis_payment_backend_yandex_kassa_check:
+    path:     /yandex/check
+    defaults: { _controller: SmartInformationSystemsPaymentBundle:YandexKassaBackend:check }
+sis_payment_backend_yandex_kassa_aviso:
+    path:     /yandex/aviso
+    defaults: { _controller: SmartInformationSystemsPaymentBundle:YandexKassaBackend:aviso }
+sis_payment_backend_yandex_kassa_success:
+    path:     /yandex/success
+    defaults: { _controller: SmartInformationSystemsPaymentBundle:YandexKassaBackend:success }
+sis_payment_backend_yandex_kassa_fail:
+    path:     /yandex/fail
+    defaults: { _controller: SmartInformationSystemsPaymentBundle:YandexKassaBackend:fail }
+
+sis_payment_backend_paymaster_check:
+    path:     /paymaster/check
+    defaults: { _controller: SmartInformationSystemsPaymentBundle:PaymasterBackend:check }
+sis_payment_backend_paymaster_confirm:
+    path:     /paymaster/confirm
+    defaults: { _controller: SmartInformationSystemsPaymentBundle:PaymasterBackend:confirm }
+sis_payment_backend_paymaster_success:
+    path:     /paymaster/success
+    defaults: { _controller: SmartInformationSystemsPaymentBundle:PaymasterBackend:success }
+sis_payment_backend_paymaster_fail:
+    path:     /paymaster/fail
+    defaults: { _controller: SmartInformationSystemsPaymentBundle:PaymasterBackend:fail }

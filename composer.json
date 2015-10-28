@@ -1,0 +1,26 @@
+{
+  "name" : "SmartInformationSystems/payment-bundle",
+  "description" : "Payment bundle",
+  "type" : "symfony-bundle",
+  "authors" : [{
+    "name" : "YK115",
+    "email" : "info@smart-systems.ru"
+  }],
+  "keywords" : [
+    "payment"
+  ],
+  "license" : [
+    "MIT"
+  ],
+  "require" : {
+  },
+  "autoload" : {
+    "psr-0" : { "SmartInformationSystems\\PaymentBundle" : "" }
+  },
+  "target-dir" : "SmartInformationSystems/PaymentBundle",
+  "extra" : {
+    "branch-alias" : {
+      "dev-master" : "1.0-dev"
+    }
+  }
+}
