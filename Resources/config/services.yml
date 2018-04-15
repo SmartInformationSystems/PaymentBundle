@@ -8,6 +8,6 @@ services:
     sis_payment:
         class: SmartInformationSystems\PaymentBundle\Service\Payment
         arguments:
-            configuration: "@smart_information_systems_payment.gateway.configuration_container"
-            session: "@session"
-            em: "@doctrine.orm.entity_manager"
+            - "@smart_information_systems_payment.gateway.configuration_container"
+            - "@session"
+            - "@doctrine.orm.entity_manager"
